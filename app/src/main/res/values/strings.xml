@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">CubertoDialog</string>
+    <string name="app_name">Cuberto Dialog</string>
+
+    <string name="shameless">Shameless</string>
+    <string name="house_of_cards">House of Cards</string>
+    <string name="breaking_bad">Breaking Bad</string>
+    <string name="dexter">Dexter</string>
+    <string name="marco_polo">Marco Polo</string>
+    <string name="suits">Suits</string>
+    <string name="gotham">Gotham</string>
+    <string name="game_of_thrones">Game of Thrones</string>
+
 </resources>

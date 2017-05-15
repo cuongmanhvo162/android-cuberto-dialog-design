@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CubertoDialog.iml" filepath="$PROJECT_DIR$/CubertoDialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-dialog-inspired-by-cuberto-design.iml" filepath="$PROJECT_DIR$/android-dialog-inspired-by-cuberto-design.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
