@@ -9,7 +9,6 @@ import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 /**
  * Created by cuongvo on 5/18/17.
  */
-
 public class ImageUtil {
     public static RoundedBitmapDrawable getRoundedImage(Context context, int imageId) {
         Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), imageId);
