@@ -13,7 +13,7 @@ public class ImageUtil {
     public static RoundedBitmapDrawable getRoundedImage(Context context, int imageId) {
         Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), imageId);
         RoundedBitmapDrawable roundedBitmapDrawable = RoundedBitmapDrawableFactory.create(context.getResources(), bitmap);
-        roundedBitmapDrawable.setCornerRadius(8);
+        roundedBitmapDrawable.setCornerRadius(16);
 
         return roundedBitmapDrawable;
     }

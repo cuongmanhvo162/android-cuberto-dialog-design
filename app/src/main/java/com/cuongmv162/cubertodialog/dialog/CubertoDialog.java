@@ -9,31 +9,35 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.cuongmv162.cubertodialog.R;
-import com.cuongmv162.cubertodialog.util.ImageUtil;
 
 /**
  * Created by cuongmv162 on 2/1/2017.
  */
 
 public class CubertoDialog extends DialogFragment {
+    private int mCoverImageId;
+
     private ImageView mCover;
     private View mView;
 
-    public CubertoDialog() {
+    Animation animScaleOut;
+    private Animation fadeIn;
 
+    public CubertoDialog() {
     }
 
-    public void create() {
-
+    public void create(int cover) {
+        this.mCoverImageId = cover;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setStyle(DialogFragment.STYLE_NO_TITLE, R.style.PauseDialog);
     }
 
     @Nullable
@@ -46,9 +50,37 @@ public class CubertoDialog extends DialogFragment {
 
         getDialog().getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-        mCover = (ImageView)mView.findViewById(R.id.dialog_cuberto_cover);
-        mCover.setImageDrawable(ImageUtil.getRoundedImage(getActivity(), R.drawable.pic));
+        mCover = (ImageView) mView.findViewById(R.id.dialog_cuberto_cover);
+        mCover.setClipToOutline(true);
+        mCover.setImageResource(mCoverImageId);
+
+        animScaleOut = AnimationUtils.loadAnimation(getActivity(), R.anim.scale_out);
+        fadeIn = AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in);
+
+        mView.startAnimation(animScaleOut);
+
+        animScaleOut.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+//                mCover.startAnimation(fadeIn);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
 
         return mView;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
     }
 }

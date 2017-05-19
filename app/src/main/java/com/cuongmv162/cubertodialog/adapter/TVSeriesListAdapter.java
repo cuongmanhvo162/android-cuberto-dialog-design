@@ -43,6 +43,7 @@ public class TVSeriesListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         TVSeriesListViewHolder viewHolder = (TVSeriesListViewHolder)holder;
 
         viewHolder.mTitle.setText(data.getTitle());
+        viewHolder.mImage.setImageResource(data.getImage());
     }
 
     @Override
