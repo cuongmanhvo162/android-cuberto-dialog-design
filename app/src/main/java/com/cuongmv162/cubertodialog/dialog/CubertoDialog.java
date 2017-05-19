@@ -28,8 +28,7 @@ public class CubertoDialog extends DialogFragment {
     Animation animScaleOut;
     private Animation fadeIn;
 
-    public CubertoDialog() {
-    }
+    public CubertoDialog() {}
 
     public void create(int cover) {
         this.mCoverImageId = cover;
@@ -56,7 +55,7 @@ public class CubertoDialog extends DialogFragment {
         mCover.setVisibility(View.INVISIBLE);
 
         animScaleOut = AnimationUtils.loadAnimation(getActivity(), R.anim.scale_out);
-        fadeIn = AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in);
+        fadeIn = AnimationUtils.loadAnimation(getActivity(), R.anim.scale_out_and_fade_in);
 
         mView.startAnimation(animScaleOut);
 
