@@ -12,6 +12,7 @@ import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.cuongmv162.cubertodialog.R;
 
@@ -21,8 +22,10 @@ import com.cuongmv162.cubertodialog.R;
 
 public class CubertoDialog extends DialogFragment {
     private int mCoverImageId;
+    private int mDescriptionId;
 
     private ImageView mCover;
+    private TextView mDescription;
     private View mView;
 
     Animation animScaleOut;
@@ -30,8 +33,9 @@ public class CubertoDialog extends DialogFragment {
 
     public CubertoDialog() {}
 
-    public void create(int cover) {
+    public void create(int cover, int description) {
         this.mCoverImageId = cover;
+        this.mDescriptionId = description;
     }
 
     @Override
@@ -53,6 +57,9 @@ public class CubertoDialog extends DialogFragment {
         mCover.setClipToOutline(true);
         mCover.setImageResource(mCoverImageId);
         mCover.setVisibility(View.INVISIBLE);
+
+        mDescription = (TextView)mView.findViewById(R.id.dialog_description);
+        mDescription.setText(mDescriptionId);
 
         animScaleOut = AnimationUtils.loadAnimation(getActivity(), R.anim.scale_out);
         fadeIn = AnimationUtils.loadAnimation(getActivity(), R.anim.scale_out_and_fade_in);

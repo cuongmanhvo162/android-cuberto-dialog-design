@@ -10,4 +10,12 @@
     <string name="gotham">Gotham</string>
     <string name="game_of_thrones">Game of Thrones</string>
 
+    <string name="dexter_description">Dexter Morgan is a Forensics Expert, but that\'s what he seems to be, as that\'s not what he really is. Dexter is a serial killer that hunts the bad.</string>
+    <string name="shamless_description">An alcoholic man lives in a perpetual stupor while his six children with whom he lives cope as best they can.</string>
+    <string name="house_of_cards_description">A Congressman works with his equally conniving wife to exact revenge on the people who betrayed him.</string>
+    <string name="game_of_throne_description">Nine noble families fight for control over the mythical lands of Westeros; A forgotten race returns after being dormant for thousands of years.</string>
+    <string name="suits_description">On the run from a drug deal gone bad, Mike Ross, a brilliant college-dropout, finds himself a job working with Harvey Specter, one of New York City\'s best lawyers.</string>
+    <string name="gotham_description">The story behind Detective James Gordon\'s rise to prominence in Gotham City in the years before Batman\'s arrival.</string>
+    <string name="breaking_bad_description">A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family\'s future.</string>
+    <string name="marco_polo_description">In a world replete with greed, betrayal, sexual intrigue and rivalry, \"Marco Polo\" is based on the famed explorer\'s adventures in Kublai Khan\'s court in 13th century Mongolia.</string>
 </resources>

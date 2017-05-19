@@ -7,6 +7,7 @@ package com.cuongmv162.cubertodialog.data;
 public class TVSeriesData {
     private String title;
     private int image;
+    private int description;
 
     public String getTitle() {
         return title;
@@ -22,5 +23,13 @@ public class TVSeriesData {
 
     public void setImage(int image) {
         this.image = image;
+    }
+
+    public int getDescription() {
+        return description;
+    }
+
+    public void setDescription(int description) {
+        this.description = description;
     }
 }

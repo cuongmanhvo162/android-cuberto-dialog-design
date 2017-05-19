@@ -19,8 +19,15 @@
         android:layout_height="150dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:scaleType="centerCrop"
         android:background="@drawable/drawable_rounded_corner_background"
+        android:scaleType="centerCrop"
         android:src="@drawable/pic" />
 
+    <TextView
+        android:id="@+id/dialog_description"
+        style="@style/TextStyle_16SP_Normal_Black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_cuberto_cover"
+        android:layout_margin="8dp" />
 </RelativeLayout>

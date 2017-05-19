@@ -40,10 +40,11 @@ public class TVSeriesListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         TVSeriesData data = mList.get(position);
 
-        TVSeriesListViewHolder viewHolder = (TVSeriesListViewHolder)holder;
+        TVSeriesListViewHolder viewHolder = (TVSeriesListViewHolder) holder;
 
         viewHolder.mTitle.setText(data.getTitle());
         viewHolder.mImage.setImageResource(data.getImage());
+        viewHolder.mDescription.setText(data.getDescription());
     }
 
     @Override
@@ -51,7 +52,7 @@ public class TVSeriesListAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         return mList.size();
     }
 
-    public TVSeriesData getItemAtPosition(int position){
+    public TVSeriesData getItemAtPosition(int position) {
         return mList.get(position);
     }
 }

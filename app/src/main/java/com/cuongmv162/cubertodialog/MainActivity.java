@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                     TVSeriesData tvSeriesData = mTvSeriesListAdapter.getItemAtPosition(position);
 
                     CubertoDialog cubertoDialog = new CubertoDialog();
-                    cubertoDialog.create(tvSeriesData.getImage());
+                    cubertoDialog.create(tvSeriesData.getImage(), tvSeriesData.getDescription());
                     cubertoDialog.show(getFragmentManager(), tvSeriesData.getTitle());
                 }
             }
