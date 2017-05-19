@@ -53,6 +53,7 @@ public class CubertoDialog extends DialogFragment {
         mCover = (ImageView) mView.findViewById(R.id.dialog_cuberto_cover);
         mCover.setClipToOutline(true);
         mCover.setImageResource(mCoverImageId);
+        mCover.setVisibility(View.INVISIBLE);
 
         animScaleOut = AnimationUtils.loadAnimation(getActivity(), R.anim.scale_out);
         fadeIn = AnimationUtils.loadAnimation(getActivity(), R.anim.fade_in);
@@ -67,7 +68,24 @@ public class CubertoDialog extends DialogFragment {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-//                mCover.startAnimation(fadeIn);
+                mCover.startAnimation(fadeIn);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+
+        fadeIn.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                mCover.setVisibility(View.VISIBLE);
             }
 
             @Override
