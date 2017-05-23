@@ -1,5 +1,4 @@
 Video for better view.
 https://streamable.com/57zju
 
-![](http://i.imgur.com/TaRZcC4.gif)
-
+![alt text](http://i.imgur.com/7sg2ond.png)
