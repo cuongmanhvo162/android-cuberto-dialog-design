@@ -1,1 +1,1 @@
-![ ](http://i.imgur.com/km7sQGo.gif)
+![](http://i.imgur.com/km7sQGo.gif)
