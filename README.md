@@ -1,5 +1,5 @@
 ##### Screen capture
-![ ](http://i.imgur.com/CYIouwi.png)
+<a href="url"><img src="http://i.imgur.com/CYIouwi.png" align="left" height="512" width="480" ></a>
 
 ![ ](http://i.imgur.com/sSBXYLY.png)
 
